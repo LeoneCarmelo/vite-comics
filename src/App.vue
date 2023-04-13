@@ -155,13 +155,20 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="py-4">
         <div class="container">
             <div class="row">
-                <button class="sign_up">SIGN-UP NOW!</button>
-                <div class="icon">
-                    <span>FOLLOW US</span>
-                </div>       
+                <div class="col d-flex justify-content-between">
+                    <a class="sign_up text-white px-2 py-1">SIGN-UP NOW!</a>
+                    <div class="icon">
+                        <span class="fw-bold">FOLLOW US</span>
+                        <font-awesome-icon icon="fa-brands fa-facebook" />
+                        <font-awesome-icon icon="fa-brands fa-twitter" />
+                        <font-awesome-icon icon="fa-brands fa-youtube" />
+                        <font-awesome-icon icon="fa-brands fa-pinterest" />
+                        <font-awesome-icon icon="fa-solid fa-location-dot" />
+                    </div>       
+                </div>
             </div>
         </div>
     </footer>
@@ -197,6 +204,19 @@ main {
 
 .info li {
     color: #8c8b8b;
+}
+
+footer {
+    background-color: #303030;
+}
+
+.sign_up {
+    text-decoration: none;
+    border: 2px solid #0282f9;
+}
+
+.icon span {
+    color:#0282f9;
 }
 
 </style>

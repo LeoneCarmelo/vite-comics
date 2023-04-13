@@ -81,10 +81,16 @@ export default {
 
     ul {
         padding-left: 0;
+        list-style: none;
     }
 
     li {
         color: #8c8b8b;
+        cursor: pointer;
+    }
+
+    li:hover {
+        color:#0282f9;
     }
 }
 </style>

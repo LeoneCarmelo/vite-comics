@@ -8,7 +8,7 @@ export default {
         <div class="container">
             <div class="row">
                 <div class="col d-flex justify-content-between">
-                    <a class="sign_up text-white px-2 py-1">SIGN-UP NOW!</a>
+                    <a class="sign_up  px-2 py-1">SIGN-UP NOW!</a>
                     <div class="icon">
                         <span class="fw-bold">FOLLOW US</span>
                         <font-awesome-icon icon="fa-brands fa-facebook" />
@@ -31,6 +31,13 @@ footer {
     .sign_up {
         text-decoration: none;
         border: 2px solid #0282f9;
+        cursor: pointer;
+        color: white;
+    }
+
+    .sign_up:hover {
+        color: #02f933;
+        border: 2px solid white;
     }
 
     .icon span {

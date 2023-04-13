@@ -31,8 +31,8 @@ export default {
                     </div>
                 </div>
                 <div class="col d-flex align-items-center">
-                    <ul class="d-flex">
-                        <li class="mx-2" v-for="item in listHeader"> {{ item.toUpperCase() }}</li>
+                    <ul class="d-flex mb-0 h-100 align-items-center">
+                        <li class="mx-2 py-4" v-for="item in listHeader"> {{ item.toUpperCase() }}</li>
                     </ul>
                 </div>
             </div>
@@ -41,8 +41,16 @@ export default {
 </template>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 ul {
     list-style: none;
+
+    li {
+        cursor: pointer;
+    }
+
+    li:hover {
+        border-bottom: 10px solid #0282f9;
+    }
 }
 </style>

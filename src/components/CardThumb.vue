@@ -20,6 +20,9 @@ export default {
 
 
 <style lang="scss" scoped>
+.thumb_body:hover {
+    box-shadow: 0 0 2px 4px #0282f9;
+}
 .thumb_body {
     width:170px;
     height: 170px;

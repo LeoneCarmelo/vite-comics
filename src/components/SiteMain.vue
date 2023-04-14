@@ -35,12 +35,13 @@ export default {
 
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
 main {
-    background-color: black;
+    background-color: $darker;
     padding-bottom: 2rem;
 
     button {
-        background-color: #0282f9;
+        background-color: $blue-strip;
         display: block;
         margin: auto;
         border: 0;
@@ -50,6 +51,6 @@ main {
         position:absolute;
         top: -15px;
         left:0px;
-        background-color: #0282f9;
+        background-color: $blue-strip;
     }
 </style>

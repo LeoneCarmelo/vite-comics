@@ -77,6 +77,7 @@ export default {
 
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
 .info {
     background:  url('/img/dc-logo-bg.png') right  no-repeat, url('/img/footer-bg.jpg') center;
 
@@ -86,12 +87,12 @@ export default {
     }
 
     li {
-        color: #8c8b8b;
+        color: $text-gray;
         cursor: pointer;
     }
 
     li:hover {
-        color:#0282f9;
+        color: $blue-strip;
     }
 }
 </style>

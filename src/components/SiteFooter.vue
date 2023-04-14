@@ -34,23 +34,24 @@ export default {
 
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
 footer {
-    background-color: #303030;
+    background-color: $dark;
 
     .sign_up {
         text-decoration: none;
-        border: 2px solid #0282f9;
+        border: 2px solid $blue-strip;
         cursor: pointer;
-        color: white;
+        color: $light;
     }
 
     .sign_up:hover {
-        color: #02f933;
-        border: 2px solid white;
+        color: $sign-up;
+        border: 2px solid $light;
     }
 
     .icon span {
-        color:#0282f9;
+        color:$blue-strip;
     }
 }
 </style>

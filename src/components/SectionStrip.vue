@@ -52,8 +52,9 @@ export default {
 
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
 .strip{
-    background-color: #0282f9;
+    background-color: $blue-strip;
 }
 
 .picture {

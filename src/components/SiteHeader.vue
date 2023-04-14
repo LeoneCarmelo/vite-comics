@@ -42,6 +42,7 @@ export default {
 
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
 ul {
     list-style: none;
 
@@ -50,7 +51,7 @@ ul {
     }
 
     li:hover {
-        border-bottom: 10px solid #0282f9;
+        border-bottom: 10px solid $blue-strip;
         margin-top: 10px;
     }
 }

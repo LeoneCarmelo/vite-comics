@@ -62,4 +62,9 @@ export default {
     img {
         max-width: 100%;
     }
-}</style>
+}
+
+ul li:nth-child(4)  img {
+    height:60px;
+}
+</style>

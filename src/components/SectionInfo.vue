@@ -78,7 +78,7 @@ export default {
 
 <style lang="scss" scoped>
 .info {
-    background-image: url('/img/footer-bg.jpg');
+    background:  url('/img/dc-logo-bg.png') right no-repeat, url('/img/footer-bg.jpg') center;
 
     ul {
         padding-left: 0;

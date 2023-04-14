@@ -33,4 +33,10 @@ img {
     object-position: top;
     display: block;
 }
+
+.thumb_head {
+    word-break: break-all;
+}
+
+
 </style>

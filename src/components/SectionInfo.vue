@@ -42,6 +42,7 @@ export default {
 }
 </script>
 <template>
+    <!-- Info -->
     <section class="info py-5">
         <div class="container">
             <div class="row">

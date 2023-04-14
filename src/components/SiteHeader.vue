@@ -30,11 +30,11 @@ export default {
                         <img src="/img/dc-logo.png" alt="">
                     </div>
                 </div>
-                <div class="col d-flex align-items-center">
+                <nav class="col d-flex align-items-center">
                     <ul class="d-flex mb-0 h-100 align-items-center">
                         <li class="mx-2 py-4" v-for="item in listHeader"> {{ item.toUpperCase() }}</li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </div>
     </header>
@@ -51,6 +51,7 @@ ul {
 
     li:hover {
         border-bottom: 10px solid #0282f9;
+        margin-top: 10px;
     }
 }
 </style>

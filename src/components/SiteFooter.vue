@@ -1,21 +1,30 @@
 <script>
 export default {
-    name: 'SiteFooter'
+    name: 'SiteFooter',
+    data() {
+        return {
+            listIcons: [
+                '/img/footer-facebook.png',
+                '/img/footer-twitter.png',
+                '/img/footer-youtube.png',
+                '/img/footer-pinterest.png',
+                '/img/footer-periscope.png'
+            ]
+        }
+    }
 }
 </script>
+
 <template>
+    <!-- Footer -->
     <footer class="py-4">
         <div class="container">
             <div class="row">
                 <div class="col d-flex justify-content-between">
                     <a class="sign_up  px-2 py-1">SIGN-UP NOW!</a>
                     <div class="icon">
-                        <span class="fw-bold">FOLLOW US</span>
-                        <font-awesome-icon icon="fa-brands fa-facebook" />
-                        <font-awesome-icon icon="fa-brands fa-twitter" />
-                        <font-awesome-icon icon="fa-brands fa-youtube" />
-                        <font-awesome-icon icon="fa-brands fa-pinterest" />
-                        <font-awesome-icon icon="fa-solid fa-location-dot" />
+                        <span class="fw-bold me-3">FOLLOW US</span>
+                        <img :src="icon" alt="" v-for="icon in listIcons" class="px-1">
                     </div>       
                 </div>
             </div>

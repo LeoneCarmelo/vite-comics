@@ -11,6 +11,7 @@ export default {
 </script>
 
 <template>
+    <!-- Main -->
     <main>
         <div class="container">
             <div class="row">

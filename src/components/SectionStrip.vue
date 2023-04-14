@@ -31,6 +31,7 @@ export default {
 }
 </script>
 <template>
+    <!--Section Blue strip -->
     <section class="strip py-3">
         <div class="container">
             <div class="row">

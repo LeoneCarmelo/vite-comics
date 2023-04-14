@@ -1,7 +1,11 @@
 <script>
 import cards from '../data/data.js';
+import JumboTron from './JumboTron.vue'
 export default {
     name: 'SiteMain',
+    components: {
+        JumboTron
+    },
     data() {
         return {
             cards: cards
@@ -14,9 +18,7 @@ export default {
 <template>
     <!-- Main -->
     <main>
-        <div class="jumbotron">
-            <img src="/img/jumbotron.jpg" alt="">
-        </div>
+        <JumboTron />
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -33,15 +35,5 @@ main {
     background-color: black;
 }
 
-.jumbotron {
-    width:100%;
-}
 
-.jumbotron > img {
-    max-width: 100%;
-    width:100%;
-    height: 350px;
-    object-fit: cover;
-    object-position: top;
-}
 </style>

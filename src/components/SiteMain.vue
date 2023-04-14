@@ -1,10 +1,12 @@
 <script>
 import cards from '../data/data.js';
 import JumboTron from './JumboTron.vue'
+import CardThumb from './CardThumb.vue'
 export default {
     name: 'SiteMain',
     components: {
-        JumboTron
+        JumboTron,
+        CardThumb
     },
     data() {
         return {
@@ -21,8 +23,8 @@ export default {
         <JumboTron />
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h2 class="text-white py-4">{{cards[0].series}}</h2>
+                <div class="col d-flex justify-content-between flex-wrap">
+                    <CardThumb v-for="card in cards" :src="card.thumb" :title="card.series" />
                 </div>
             </div>
         </div>
@@ -34,6 +36,7 @@ export default {
 main {
     background-color: black;
 }
+
 
 
 </style>

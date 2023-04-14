@@ -35,7 +35,8 @@ img {
 }
 
 .thumb_head {
-    word-break: break-all;
+    width: 170px;
+    word-break: break-word;
 }
 
 

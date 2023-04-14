@@ -1,20 +1,10 @@
 <script>
+import list from '../data/header.js'
 export default {
     name: 'SiteHeader',
     data() {
         return {
-            listHeader: [
-                'characters',
-                'comics',
-                'movies',
-                'tv',
-                'games',
-                'collectibles',
-                'videos',
-                'fans',
-                'news',
-                'shop',
-            ],
+            list: list
         }
     }
 }
@@ -32,7 +22,7 @@ export default {
                 </div>
                 <nav class="col d-flex align-items-center">
                     <ul class="d-flex mb-0 h-100 align-items-center">
-                        <li class="mx-2 py-4" v-for="item in listHeader"> {{ item.toUpperCase() }}</li>
+                        <li class="mx-2 py-4" v-for="item in list"> {{ item.toUpperCase() }}</li>
                     </ul>
                 </nav>
             </div>
@@ -53,6 +43,7 @@ ul {
     li:hover {
         border-bottom: 10px solid $blue-strip;
         margin-top: 10px;
+        color: $blue-strip;
     }
 }
 </style>

@@ -1,41 +1,13 @@
 <script>
+import {dblList, shopList, dcList, sitesList} from '../data/sectionInfo.js'
 export default {
     name: 'SectionInfo',
     data() {
         return {
-            dblList: [
-                    'Characters',
-                    'Comics',
-                    'Movies',
-                    'TV',
-                    'Games',
-                    'Videos',
-                    'News'
-                ],
-                shopList: [
-                    'Shop DC',
-                    'Shop DC Collectibles'
-                ],
-                dcList: [
-                    'Terms Of Use',
-                    'Privacy policy (New)',
-                    'Ad Choices',
-                    'Advertising',
-                    'Jobs',
-                    'Subscriptions',
-                    'Talent Workshops',
-                    'CPSC Certificates',
-                    'Ratings',
-                    'Shop Help',
-                    'Contact Us',
-                ],
-                sitesList: [
-                    'DC',
-                    'MAD Magazine',
-                    'DC Kids',
-                    'DC Universe',
-                    'DC Power Visa'
-                ]
+            dblList: dblList,
+            shopList: shopList,
+            dcList: dcList,
+            sitesList: sitesList
         }
     }
 

@@ -27,6 +27,7 @@ export default {
                     <CardThumb v-for="card in cards" :src="card.thumb" :title="card.series" />
                 </div>
             </div>
+            <button class="text-white text-uppercase mt-5 px-5 py-2 fw-bold">Load More</button>
         </div>
     </main>
 </template>
@@ -35,6 +36,14 @@ export default {
 <style lang="scss" scoped>
 main {
     background-color: black;
+    padding-bottom: 2rem;
+
+    button {
+        background-color: #0282f9;
+        display: block;
+        margin: auto;
+        border: 0;
+    }
 }
 
 

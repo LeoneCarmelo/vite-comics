@@ -23,7 +23,8 @@ export default {
         <JumboTron />
         <div class="container">
             <div class="row">
-                <div class="col d-flex justify-content-between flex-wrap">
+                <div class="col d-flex justify-content-between flex-wrap position-relative">
+                    <div class="series text-uppercase text-white px-2 py-1 fw-bold fs-5">current series</div>
                     <CardThumb v-for="card in cards" :src="card.thumb" :title="card.series" />
                 </div>
             </div>
@@ -45,7 +46,10 @@ main {
         border: 0;
     }
 }
-
-
-
+.series {
+        position:absolute;
+        top: -15px;
+        left:0px;
+        background-color: #0282f9;
+    }
 </style>
